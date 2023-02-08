@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "296359471425",
+    "project_id": "puzzle-cc575",
+    "storage_bucket": "puzzle-cc575.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296359471425:android:0d9061797932904e3c99c0",
+        "android_client_info": {
+          "package_name": "com.example.puzzlegam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296359471425-v22gojn1m0hoohdj4r3ijm2bv3pvar20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7G5sI1A5jI8eN3znpZ9tCDGtPzr7_PZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296359471425-v22gojn1m0hoohdj4r3ijm2bv3pvar20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

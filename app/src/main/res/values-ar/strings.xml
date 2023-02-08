@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">لعبة الالغاز</string>
+    <string name="start">ابدأ</string>
+    <string name="settings">الاعدادات</string>
+    <string name="exit">خروج</string>
+    <string name="welcome">اهلا بك </string>
+    <string name="stages">المراحل</string>
+    <string name="level">   مرحلة :</string>
+    <string name="dont_point">لا توجد نقاط كافية لتخطي السؤال</string>
+    <string name="sound">الصوت</string>
+    <string name="music">الموسيقى</string>
+    <string name="my_profile">ملفي الشخصي</string>
+    <string name="notification">الاشعارات</string>
+    <string name="replay_all_data">اعادة البدء من جديد</string>
+    <string name="user_name">اسم المستخدم </string>
+    <string name="email">الايميل</string>
+    <string name="date">تاريخ الميلاد</string>
+    <string name="gaza">المدينة</string>
+    <string name="gender">الجنس</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثى</string>
+    <string name="create">انشاء</string>
+    <string name="appraise_app">قيم التطبيق</string>
+    <string name="main">الصفحة الرئيسية</string>
+    <string name="replay">أعد المرحلة</string>
+    <string name="next_stage">المرحلة التالية</string>
+    <string name="not_stage_complete">لم تكتمل المرحلة بعد!!</string>
+    <string name="stage_complete">اكتملت المرحلة</string>
+    <string name="point_stage">النقاط المطلوبة </string>
+    <string name="my_point">نقاطي </string>
+    <string name="hello_blank_fragment">مرحبا</string>
+
+
+
+
+</resources>

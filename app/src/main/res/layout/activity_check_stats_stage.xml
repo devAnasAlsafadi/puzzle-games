@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_check"
+    tools:context=".views.CheckStatsStageActivity">
+
+
+
+    <ImageView
+        android:id="@+id/iv_complete_failed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:paddingStart="@dimen/_20sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/failed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_sad_star"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_120sdp"
+        android:src="@drawable/sad_smile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_complete_failed" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_replay_newStage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/btn_done_stage"
+        android:fontFamily="@font/dsd"
+        android:text="@string/replay"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textAllCaps="false"
+        android:textColor="#F26900"
+        android:textSize="@dimen/_22ssp"
+        android:textStyle="bold"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_appraise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_appraise"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/btn_done_stage"
+        android:fontFamily="@font/dsd"
+        android:text="@string/appraise_app"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:textAllCaps="false"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textColor="#F26900"
+        android:textSize="@dimen/_22ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/btn_done_stage"
+        android:fontFamily="@font/dsd"
+        android:text="@string/main"
+        android:textAllCaps="false"
+        android:textColor="#F26900"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textSize="@dimen/_22ssp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_stage_complete"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:textColor="#FF5722"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_sad_star" />
+
+    <TextView
+        android:id="@+id/tv_all_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/point_stage"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+    <TextView
+        android:id="@+id/tv_mypoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_point"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_all_point" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
