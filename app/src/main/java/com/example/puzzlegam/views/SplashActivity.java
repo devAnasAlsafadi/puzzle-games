@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 
 
 import com.daimajia.androidanimations.library.Techniques;
@@ -47,8 +48,14 @@ public class SplashActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         finish();
-
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("TAG", "onStart: "+getStageJson().size());
+    }
+
     public String loadJsonFromAssets(){
         String json = null;
         try {
@@ -99,10 +106,9 @@ public class SplashActivity extends AppCompatActivity {
                     String answers4 = jsonArray1.getJSONObject(i).getString("answer_4");
                     String trueAnswers = jsonArray1.getJSONObject(i).getString("true_answer");
                     int  pointQuestions = jsonArray1.getJSONObject(i).getInt("points");
-                    int  patternsId = jsonArray1.getJSONObject(i).getInt("pattern_id");
                     int  durations = jsonArray1.getJSONObject(i).getInt("duration");
                     String  hint = jsonArray1.getJSONObject(i).getString("hint");
-                    Questions questions = new Questions(idQuestion,idStage,title,answers1,answers2,answers3,answers4,trueAnswers,pointQuestions,patternsId,durations,hint);
+                    Questions questions = new Questions(idQuestion,idStage,title,answers1,answers2,answers3,answers4,trueAnswers,pointQuestions,durations,hint);
                     listQuestions.add(questions);
                 }
 

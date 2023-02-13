@@ -29,14 +29,6 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity
-            android:name=".views.EditActivity"
-            android:exported="false" >
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-
         <service
             android:name=".service.JobServiceNotification"
             android:exported="true"

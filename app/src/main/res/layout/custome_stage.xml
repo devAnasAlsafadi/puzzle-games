@@ -12,19 +12,19 @@
     android:paddingBottom="@dimen/_10sdp"
     >
 
+
     <RatingBar
         android:id="@+id/ratingBar"
         style="@style/Widget.AppCompat.RatingBar.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
         android:progressBackgroundTint="@color/white"
         android:progressTint="@color/white"
         android:rating="5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_level" />
-
 
     <TextView
         android:id="@+id/tv_level"
@@ -32,9 +32,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_15sdp"
         android:text="Level : 1"
+        android:fontFamily="@font/games"
         android:layout_marginTop="@dimen/_5sdp"
         android:textColor="@color/white"
-        android:textSize="@dimen/_22ssp"
+        android:textSize="@dimen/_26ssp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -55,7 +56,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="50/0"
-        android:textSize="@dimen/_20ssp"
+        android:fontFamily="@font/games"
+        android:textSize="@dimen/_24ssp"
         android:layout_marginTop="@dimen/_5sdp"
         android:textColor="@color/white"
         android:layout_marginEnd="@dimen/_20sdp"

@@ -57,10 +57,6 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                 Intent intent  = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.tv_profile:
-                Intent intentProfile   = new Intent(getApplicationContext(),ProfileActivity.class);
-                startActivity(intentProfile);
-                break;
             case R.id.btn_replay_play:
                 DeleteDataFragment deleteDataFragment = DeleteDataFragment.newInstance("Replay Game","are you sure to replay play");
                 deleteDataFragment.show(getSupportFragmentManager(),null);
@@ -69,7 +65,6 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void setOnClickListener(){
-        binding.tvProfile.setOnClickListener(this);
         binding.ivBackSetting.setOnClickListener(this);
         binding.btnReplayPlay.setOnClickListener(this);
     }

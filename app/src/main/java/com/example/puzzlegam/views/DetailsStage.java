@@ -80,7 +80,6 @@ public class DetailsStage extends AppCompatActivity implements CheckAnswersListe
         mpWin = MediaPlayer.create(this, R.raw.win);
         model = new ViewModelProvider(this).get(MyViewModel.class);
         List<Fragment> list = new ArrayList<>();
-        binding.tvAllPoint.setText(String.valueOf(getAllPoint()));
         binding.tvLevelNumber.setText(String.valueOf(getId()));
 
 

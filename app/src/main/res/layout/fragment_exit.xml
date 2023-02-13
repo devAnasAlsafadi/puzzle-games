@@ -6,11 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#6F410A"
     tools:context=".dialogFragment.DeleteDataFragment">
-
-
-
-
-
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
@@ -31,6 +26,7 @@
         android:text="Yes"
         android:textColor="@color/white"
         android:textSize="@dimen/_24ssp"
+        android:fontFamily="@font/games"
         android:textStyle="bold"
         android:layout_marginTop="@dimen/_20sdp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,6 +42,7 @@
         android:text="No"
         android:textColor="@color/white"
         android:textSize="@dimen/_24ssp"
+        android:fontFamily="@font/games"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/btn_yes"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,9 +56,10 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="@dimen/_30sdp"
         android:gravity="center"
-        android:text="are you sure to exit app"
-        android:textColor="@color/white"
+        android:text="are you sure to Replay app"
+        android:textColor="#FFEB3B"
         android:textSize="@dimen/_26ssp"
+        android:fontFamily="@font/games"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -73,11 +71,13 @@
         android:id="@+id/tv_Exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/games"
         android:text="Replay play"
+        android:textColor="#98F42E"
         android:textSize="@dimen/_24ssp"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

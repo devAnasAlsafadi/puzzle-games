@@ -67,11 +67,6 @@ public class Questions implements Serializable {
         @Expose
         private Integer points;
 
-        @ColumnInfo(name = "pattern_id_base")
-        @SerializedName("pattern_id")
-        @Expose
-        private Integer patternId;
-
         @ColumnInfo(name = "duration_base")
         @SerializedName("duration")
         @Expose
@@ -90,7 +85,7 @@ public class Questions implements Serializable {
 
 
     @Ignore
-    public Questions(Integer id, Integer idStageFor, @NonNull String title, String answer1, String answer2, String answer3, String answer4, String trueAnswer, Integer points, Integer patternId, Integer duration, String hint) {
+    public Questions(Integer id, Integer idStageFor, @NonNull String title, String answer1, String answer2, String answer3, String answer4, String trueAnswer, Integer points,  Integer duration, String hint) {
         this.id = id;
         this.idStageFor = idStageFor;
         this.title = title;
@@ -100,7 +95,6 @@ public class Questions implements Serializable {
         this.answer4 = answer4;
         this.trueAnswer = trueAnswer;
         this.points = points;
-        this.patternId = patternId;
         this.duration = duration;
         this.hint = hint;
     }
@@ -187,13 +181,6 @@ public class Questions implements Serializable {
         this.points = points;
     }
 
-    public Integer getPatternId() {
-        return patternId;
-    }
-
-    public void setPatternId(Integer patternId) {
-        this.patternId = patternId;
-    }
 
     public Integer getDuration() {
         return duration;

@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.example.puzzlegam.R;
@@ -42,6 +43,7 @@ public class StagesActivity extends AppCompatActivity  {
         viewModel.getAllStage().observe(this, new Observer<List<Stage>>() {
             @Override
             public void onChanged(List<Stage> stages) {
+                Log.d("TAG", "onChanged: "+stages.size());
                 adapter.setList(stages);
                 listStage.addAll(stages);
             }

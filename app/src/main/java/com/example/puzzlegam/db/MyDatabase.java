@@ -20,7 +20,7 @@ import com.example.puzzlegam.views.DetailsStage;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = {User.class, Stage.class, Questions.class, DetailsQuestion.class}, version = 1, exportSchema = false)
+@Database(entities = {User.class, Stage.class, Questions.class, DetailsQuestion.class}, version = 2, exportSchema = false)
 public abstract class MyDatabase extends RoomDatabase {
 
     public abstract QuestionDAO questionDAO();
